@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page Kombi-1984</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <section class="flex">
+        <a href="#home" class="logo">LandingPage</a>
+
+        <div class="icons">
+          <div id="cart-btn" class="fas fa-shopping-cart"></div>
+        </div>
+      </section>
+    </header>
+
+    <div class="home-bg">
+      <section class="home" id="home">
+        <div class="slide-container">
+          <div class="slide active">
+            <div class="image"></div>
+            <div class="content">
+              <div class="fas fa-angle-left" onclick="prev()"></div>
+              <div class="fas fa-angle-right" onclick="next()"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="about" id="about">
+      <h1 class="heading">Kombi - 1984</h1>
+
+      <div class="box-container">
+        <div class="box">
+          <img src="#" alt="" />
+          <h3>MODELO</h3>
+          <p>Volkswagen - Kombi Camper</p>
+        </div>
+
+        <div class="box">
+          <img src="#" alt="" />
+          <h3>KM</h3>
+          <p>250.000km</p>
+        </div>
+
+        <div class="box">
+          <img src="#" alt="" />
+          <h3>PREÇO</h3>
+          <p>R$ 149.900</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq" id="faq">
+      <h1 class="heading"></h1>
+
+      <div class="accordion-container">
+        <div class="accordion active">
+          <div class="accordion-heading">
+            <span
+              >O Volkswagen Kombi foi um veículo comercial ligeiro produzido
+              pela empresa automotiva alemã Volkswagen, entre 1950 e 2013.</span
+            >
+            <i class="fas fa-angle-down"></i>
+          </div>
+          <p class="accrodion-content">
+            Sua construção robusta monobloco (sem chassi), suspensão
+            independente com barras de torção, além da excêntrica posição do
+            motorista no automóvel (sentado sobre o eixo dianteiro e com a
+            coluna de direção praticamente vertical), o tornam um veículo
+            simples e robusto, de baixo custo de manutenção.
+            <br />
+            <br />
+            • Câmbio manual
+            <br />
+            • Teto retrátil
+            <br />
+            • Motor VW
+            <br />
+            • Interior em customizado
+            <br />
+            • Rodas Originais
+            <br />
+          </p>
+        </div>
+    </section>
+
+    <img id="interior" src="/assets/BPG-2.png" alt="#">
+
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <i class="fas fa-phone"></i>
+          <h3>telefone</h3>
+          <p>(61) 999-999</p>
+        </div>
+
+        <div class="box">
+          <i class="fas fa-map-marker-alt"></i>
+          <h3>endereço</h3>
+          <p>UCB - CATÓLICA</p>
+        </div>
+
+        <div class="box">
+          <i class="fas fa-envelope"></i>
+          <h3>email</h3>
+          <p>kombivenda@gmail.com</p>
+        </div>
+      </div>
+
+      <div class="credit">
+        &copy;2023 feito por <span>Leonardo Szervinski</span>
+      </div>
+    </section>
+  </body>
+</html>
