@@ -3,7 +3,7 @@
  
  Desenvolvimento FrontEnd - Prof Iran Victor Pinheiro Moura
  
- link: `https://leonardoszervinski.github.io/Landing-Page/`
+ `link:` https://leonardoszervinski.github.io/Landing-Page/
  
  
 
