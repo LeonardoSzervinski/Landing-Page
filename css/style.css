@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;800&display=swap");
+
+:root {
+  --red: #e74c3c;
+  --black: #333;
+  --white: #fff;
+  --light-bg: #f5f5f5;
+  --light-color: #666;
+  --border: 0.1rem solid var(--light-color);
+  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+* {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: 0.2s linear;
+}
+
+::-webkit-scrollbar {
+  width: 1rem;
+  height: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--red);
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 7.5rem;
+}
+
+body {
+  background: var(--light-bg);
+  overflow-x: hidden;
+}
+
+section {
+  padding: 2rem;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 4rem;
+  color: var(--black);
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  background-color: var(--black);
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--white);
+  box-shadow: var(--box-shadow);
+  z-index: 1000;
+}
+
+.header .flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.header .flex .logo {
+  font-size: 2.5rem;
+  color: var(--black);
+}
+
+.header .flex .navbar a {
+  margin: 0 1rem;
+  font-size: 2.2rem;
+  color: var(--black);
+}
+
+.header .flex .navbar a:hover {
+  text-decoration: underline;
+  color: var(--red);
+}
+
+.header .flex .icons div {
+  font-size: 2.5rem;
+  color: var(--light-color);
+  cursor: pointer;
+  margin-left: 1.7rem;
+}
+
+.header .flex .icons div:hover {
+  color: var(--red);
+}
+
+.header .flex .icons div span {
+  font-size: 2rem;
+}
+
+.home-bg {
+  background: url(/assets/BPG-1.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 800px;
+}
+
+.home-bg .home .slide-container .slide {
+  display: none;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.about .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 35rem);
+  gap: 1.5rem;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.about .box-container .box {
+  background-color: var(--white);
+  border-radius: 0.5rem;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: var(--box-shadow);
+}
+
+.about .box-container .box img {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.about .box-container .box h3 {
+  font-size: 2.5rem;
+  color: var(--black);
+}
+
+.about .box-container .box p {
+  padding: 1rem 0;
+  line-height: 2;
+  font-size: 1.6rem;
+  color: var(--light-color);
+}
+
+#interior {
+  width: auto;
+  height: 470px;
+  display: block;
+  margin: auto;
+}
+
+.faq .accordion-container {
+  max-width: 108rem;
+  margin: 0 auto;
+}
+
+.faq .accordion-container .accordion {
+  margin: 1.5rem 0;
+  box-shadow: var(--box-shadow);
+}
+
+.faq .accordion-container .accordion .accordion-heading {
+  padding: 1.5rem;
+  background: var(--black);
+  color: var(--white);
+  cursor: pointer;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.faq .accordion-container .accordion .accrodion-content {
+  padding: 2rem;
+  background-color: var(--white);
+  line-height: 2;
+  color: var(--light-color);
+  font-size: 1.6rem;
+  display: none;
+}
+
+.faq .accordion-container .accordion.active .accrodion-content {
+  display: inline-block;
+}
+
+.faq .accordion-container .accordion.active .accordion-heading {
+  background: var(--red);
+}
+
+.faq .accordion-container .accordion.active .accordion-heading i {
+  transform: rotate(180deg);
+}
+
+.footer .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+  gap: 1.5rem;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.footer .box-container .box {
+  padding: 2rem;
+  text-align: center;
+  background-color: var(--white);
+  box-shadow: var(--box-shadow);
+  border-radius: 0.5rem;
+}
+
+.footer .box-container .box i {
+  height: 6rem;
+  width: 6rem;
+  line-height: 6rem;
+  font-size: 2rem;
+  color: var(--white);
+  background-color: var(--red);
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+}
+
+.footer .box-container .box h3 {
+  margin: 1rem 0;
+  color: var(--black);
+  text-transform: capitalize;
+  font-size: 2rem;
+}
+
+.footer .box-container .box p {
+  line-height: 2;
+  font-size: 1.6rem;
+  color: var(--light-color);
+}
+
+.footer .credit {
+  text-align: center;
+  margin-top: 3rem;
+  padding: 1rem 0;
+  padding-top: 3rem;
+  border-top: var(--border);
+  font-size: 2rem;
+  color: var(--black);
+}
+
+.footer .credit span {
+  color: var(--red);
+}
